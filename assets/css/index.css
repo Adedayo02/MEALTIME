@@ -202,3 +202,25 @@ body{
     #nav{
         padding-left: 520px;
     }
+
+    #images{
+        padding-left: 25px;
+    }
+
+    #boxw{
+        width: 140px;
+        height: 200px;
+        border: 2px solid white;
+        border-radius: 25px;
+        margin: 15px 15px 5px 5px;
+        padding-left: 35px;
+        background-color: black;
+        box-shadow: white 10px 5px 5px 10px;
+
+    }
+
+    #fool{
+        padding-top: 15px;
+        padding-left: 5px;
+        color: white;
+    }
