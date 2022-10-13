@@ -68,7 +68,7 @@ body{
     }
 
     #app{
-        background-color:rgb(247, 247, 136) ;
+        background-color:rgb(247, 247, 197) ;
         width: 200;
         border: 10px solid white;
         border-radius: 20px;
@@ -86,8 +86,8 @@ body{
     
     #phone{
         float: right;
-        border: 2px solid white;
-        border-radius: 20px;  
+        margin-top: 0px;
+          
     }
     
     #meal{
@@ -225,4 +225,70 @@ body{
         color: white;
     }
 
-    
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      #menu{
+        width: 13em;
+        height: 16em;
+        background-color: #fffaed;
+        border-radius: 2em;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 2em 1em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      #menu:hover {
+        background-color: black;
+        color: #fffaed;
+      }
+      
+      #menu img {
+        width: 4em;
+        height: 4em;
+        color: #fffaed;
+        background-color: white;
+        border-radius: 100%;
+      }
+      
+      #menu:hover img {
+        background-color: #fffaed;
+      }
+
+      #word{
+        font-size: medium;
+      }
+      
+     

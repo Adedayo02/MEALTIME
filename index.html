@@ -7,6 +7,10 @@
     <script src="https://kit.fontawesome.com/06c09e0912.js"></script>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- navigation -->
@@ -89,46 +93,88 @@
       </div>
 
       <!-- Our Menu -->
-    <div class="container">
+    <div id="menu-box" class="container">
         <h4>Our Menu <span id="view">View All></span></h4>
-        <div  class="row row-cols-4 row-cols-sm-3 row-cols-md-8 g-8">
-            <div id="box" class="col">
-                  <div id="foo"> <img src="./assets/images/pizza.png" alt="" srcset="" height="40" width="40">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div id="menu" class="card">
+                <div>
+                  <img src="./assets/images/pizza.png" alt="PIZZA" height="40" width="40"/>
+                </div>
+                <div>
+                  <h2 id="word">Pizza</h2>
+                </div>
+              </div>
             </div>
-            <h6 id="text" >Pizza</h6>
-        </div>
-          <div id="box"  class="col">
-            <div id="foo"> <img src="./assets/images/chicken.png" alt="" srcset="" height="40" width="40">
+            <div class="swiper-slide">
+              <div id="menu" class="card">
+                <div>
+                  <img src="./assets/images/chicken.png" alt="CHICKEN"  height="40" width="40"/> 
+                </div>
+                <div>
+                  <h2 id="word">Chicken</h2>
+                </div>
+              </div>
             </div>
-            <h6 id="text" >Chicken</h6>
-          </div>
-          <div id="boxw" class="col">
-            <div id="foo"> <img src="./assets/images/ham.png" alt="" srcset="" height="40" width="40">
+            <div class="swiper-slide">
+              <div id="menu" class="card">
+                <div>
+                  <img src="./assets/images/ham.png" alt="BURGER" height="40" width="40"/> 
+                </div>
+                <div>
+                  <h2 id="word">Burger</h2>
+                </div>
+              </div>
             </div>
-            <h6 id="fool" >Burger ></h6>
-          </div>
-          <div id="box" class="col">
-            <div id="foo"> <img src="./assets/images/salad.png" alt="" srcset="" height="40" width="40">
+            <div class="swiper-slide">
+              <div id="menu" class="card">
+                <div>
+                  <img src="./assets/images/salad.png" alt="CHICKEN" />
+                </div>
+                <div>
+                  <h2 id="word">Salad</h2>
+                </div>
+              </div>
             </div>
-            <h6 id="text" >Salad</h6>
-          </div>
-          <div id="box" class="col">
-            <div id="foo"> <img src="./assets/images/fries.png" alt="" srcset="" height="40" width="40">
+            <div  class="swiper-slide">
+              <div id="menu" class="card">
+                <div>
+                  <img src="./assets/images/fries.png" alt="CHICKEN" />
+                </div>
+                <div>
+                  <h2 id="word">Fries</h2>
+                </div>
+              </div>
             </div>
-            <h6 id="text" >Fries</h6>
-          </div>
-          <div id="box" class="col">
-            <div id="foo"> <img src="./assets/images/rice.png" alt="" srcset="" height="40" width="40">
+
+            <div  class="swiper-slide">
+              <div id="menu" class="card">
+                <div>
+                  <img src="./assets/images/rice.png" alt="CHICKEN" />
+                </div>
+                <div>
+                  <h2 id="word">Rice</h2>
+                </div>
+              </div>
             </div>
-            <h6 id="text" >Rice</h6>
-          </div>
-          <div id="box" class="col">
-            <div id="foo"> <img src="./assets/images/sand.png" alt="" srcset="" height="40" width="40">
+
+            <div  class="swiper-slide">
+              <div id="menu" class="card">
+                <div>
+                  <img src="./assets/images/fries.png" alt="CHICKEN" />
+                </div>
+                <div>
+                  <h2 id="word">Fries</h2>
+                </div>
+              </div>
             </div>
-            <h6 id="text" >Cake</h6>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  </div>
 
       <!-- Popular Foods -->
       <div class="album py-5 bg-light">
@@ -250,7 +296,7 @@
              <img src="./assets/images/app store.svg" alt="" srcset="" height="150" width="250">
         </div>
         <div id="phone">
-            <img src="./assets/images/images.jpg" alt="" srcset=""height="450" width="450">
+            <img src="./assets/images/mobile.svg" alt="" srcset=""height="600" width="600">
         </div>
     </div>
 
@@ -334,7 +380,13 @@
           </div>
     </div>
           
-            
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6.5,
+        spaceBetween: 30, 
+      });
+    </script>       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
